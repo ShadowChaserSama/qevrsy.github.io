@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0F0E47;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 14px 28px;
+}
+
+.logo {
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.nav-link {
+    color: #A9A9A9;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+    transform: translateY(-4px);
+    color: #fff;
+}
+
+hr {
+    border-color: #334155;
+    width: 65%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    border: #8686AC 2px solid;
+    transition: all 0.25s ease;
+}
+
+.image:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+    border-color: #8b5cf6;
+}
+
+.nick {
+    color: #fff;
+    font-size: 44px;
+    margin-top: 20px;
+}
+
+.title {
+    color: rgb(249, 229, 191);
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.contacts {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    color: #fff;
+    font-size: 30px;
+    transition: all 0.2s ease;
+}
+
+.contact:hover {
+    color: #8b5cf6;
+}
+
+.contact-btn {
+    display: flex;
+    margin: auto;
+    margin-top: 0;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #505081;
+    width: 10em;
+    height: 50px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    transition: all 0.25s ease;
+}
+
+.contact-btn:hover {
+    transform: scale(0.94);
+}
