@@ -173,3 +173,90 @@ hr {
 .dark-btn {
     background-color: #CC3A63;
 }
+
+.hamburger-btn {
+    color: #fff;
+    background: none;
+    border: none;
+    font-size: 24px;
+    transition: all 0.25s ease;
+    display: none;
+}
+
+.hamburger-btn:hover {
+    color: #8b5cf6;
+}
+
+body.dark-bg .hamburger-btn {
+    color: #111;
+}
+
+body.dark-bg .hamburger-btn:hover {
+    color: #CC3A63;
+}
+
+.hamburger-links {
+    display: none;
+    background-color: #8686AC;
+    border-radius: 12px;
+    transition: 0.25s ease all;
+}
+
+.hamburger-links.active {
+    animation-name: nav;
+    animation-duration: 1.25s;
+    display: block;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding: 12px 18px;
+    list-style: none;
+    transition: 0.25s ease all;
+}
+
+.link {
+    text-decoration: none;
+    color: #dcd8d8;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+
+
+.link:hover {
+    color: #fff;
+    transform: translateY(-4px);
+}
+
+body.dark-bg .link:hover {
+    color: #111;
+}
+
+body.dark-bg .hamburger-links {
+    background-color: #e7bd6f;
+}
+
+@media (max-width: 768px) {
+    .hamburger-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
+
+@keyframes nav {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
