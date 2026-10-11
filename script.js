@@ -56,3 +56,21 @@ darkmode.addEventListener('click', e => {
     dark = true
    } 
 })
+
+
+let hamburger_btn = document.getElementById('hamburgerBtn')
+let hamburger_nav = document.getElementById('hamburger-links')
+
+let is_active = false
+
+hamburger_btn.addEventListener('click', e => {
+    if (is_active) {
+        hamburger_btn.innerHTML = '<i class="fa-solid fa-bars" id="menuIcon"></i>';
+        hamburger_nav.classList.toggle('active')
+        is_active = false
+    } else {
+        hamburger_btn.innerHTML = '<i class="fa-solid fa-xmark" id="menuIcon"></i>';
+        hamburger_nav.classList.toggle('active')
+        is_active = true
+    }
+})
